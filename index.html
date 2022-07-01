@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="body">
+        <nav class="navbar">
+            <div class="width-control">
+                <div class="logo"><a href="#">Port<span>folio</span></a></div>
+                <ul class="menu">
+                    <li><a href="#home" class="menu-btn">Home</a></li>
+                    <li><a href="#about" class="menu-btn">About</a></li>
+                    <li><a href="#skills" class="menu-btn">Skills</a></li>
+                    <li><a href="#contact" class="menu-btn">Contact</a></li>
+                </ul>
+                <div class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+        <section id="home" class="home">
+            <div class="width-control">
+                <div class="home-content">
+                    <div class="text-1">Hello, my name is</div>
+                    <div class="text-2">Atanas Atanasov</div>
+                    <div class="text-3">and welcome to my page</div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <div class="width-control">
+                <h2 class="title">About Me</h2>
+                <div class="about-content">
+                    <div class="info">
+                        <p style="color:crimson">Atanas Atanasov, age 20, currently I'm student of Computer Science</p>
+                        <p style="color:dimgray">My knowedge expands from programming languages as C,C++ and some basics of C# and Java, also I'm trying to learn more from day to day about HTML,CSS,JavaScript.</p>
+                        <p style="color:crimson">I'm interested in learning PHP or Python,C# and Java more in-depth in near future.</p>
+                        <p style="color:dimgray">I will probably try to learn all the necessities for making games,web pages,mobile apps as they are most fun to me.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="skills">
+            <div class="width-control">
+                <h2 class="title">My skills</h2>
+                <div class="skills-content">
+                    <div class="column left">
+                        <div class="text">Some skills I possess.</div>
+                    </div>
+                    <div class="column right">
+                        <div class="bars">
+                            <div class="info">
+                                <span>HTML</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="line html"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>CSS</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="line css"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>JavaScript</span>
+                                <span>45%</span>
+                            </div>
+                            <div class="line js"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="interests" id="interests">
+            <div class="width-control">
+                <h2 class="title">Interests</h2>
+                <div class="interests-content">
+                    <div class="column left">
+                        <h2>Languages</h2>
+                        <ul>
+                            <li>Java</li>
+                            <li>C#</li>
+                            <li>PHP</li>
+                            <li>MySQL</li>
+                            <li>Python</li>
+                        </ul>
+                    </div>
+                    <div class="column right">
+                        <h2>To Make</h2>
+                        <ul>
+                            <li>Websites</li>
+                            <li>Video Games</li>
+                            <li>Software</li>
+                            <li>AI related projects</li>
+                            <li>...</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="width-control">
+                <h2 class="title">Contacts</h2>
+                <div class="contact-content">
+                    <div class="column left">
+                        <div class="text">Get in touch with me here!</div>
+                        <div class="icons">
+                            <div class="icon github">
+                                <a href="https://github.com/malle2002">
+                                    <div class="tooltip">Github</div>
+                                    <span><i class="fab fa-github"></i></span>
+                                </a>
+                            </div>
+                            <div class="icon youtube">
+                                <a href="https://www.youtube.com/channel/UC-A89_tcNtIunSOjfD_VmOA">
+                                    <div class="tooltip">Youtube</div>
+                                    <span><i class="fab fa-youtube"></i></span>
+                                </a>
+                            </div>
+                            <div class="icon twitter">
+                                <a href="https://twitter.com/Atanas123Master">
+                                    <div class="tooltip">Twitter</div>
+                                    <span><i class="fab fa-twitter"></i></span>
+                                </a>
+                            </div>
+                            <div class="icon mail">
+                                <a href="mailto: master_atanasov2002@hotmail.com">
+                                    <div class="tooltip">Email</div>
+                                    <span><i class="fa fa-envelope"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column right">
+                        <div class="text">Message me here!</div>
+                        <form action="#">
+                            <div class="fields">
+                                <div class="field name">
+                                    <input type="text" placeholder="Name">
+                                </div>
+                                <div class="field email">
+                                    <input type="email" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <input type="text" placeholder="Subject">
+                            </div>
+                            <div class="field textarea">
+                                <textarea cols="30" rows="10" placeholder="Describe project.."></textarea>
+                            </div>
+                            <div class="button">
+                                <button type="sumbit">Send message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="scrollup-btn">
+            <i class="fas fa-angle-up"></i>
+        </div>
+        <footer>
+            <span>Made in 2022.<span class="far fa-copyright">All right reserved.</span></span>
+        </footer>
+    </div>
+</body>
+</html>
+<head><script src="script.js"></script></head>
