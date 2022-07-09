@@ -9,9 +9,9 @@
 </head>
 <body>
     <div class="body">
-        <nav class="navbar">
+        <nav class="navbar" id="navbar1">
             <div class="width-control">
-                <div class="logo"><a href="#">Port<span>folio</span></a></div>
+                <div class="logo"><a href="#">Abo<span>utMe</span></a></div>
                 <ul class="menu">
                     <li><a href="#home" class="menu-btn">Home</a></li>
                     <li><a href="#about" class="menu-btn">About</a></li>
@@ -103,6 +103,56 @@
                         </ul>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="column">
+                        <img src="images/AI.webp" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="images/FPS.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="images/WEBSITE.webp" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                    </div>
+                </div>
+
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 4</div>
+                            <img src="images/O_AI.webp" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 4</div>
+                            <img src="images/O_FPS.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 4</div>
+                            <img src="images/O_WEBSITE.webp" style="width:100%">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                        <div class="caption-container">
+                            <p id="caption"></p>
+                        </div>
+
+
+                        <div class="column">
+                            <img class="demo cursor" src="images/AI.webp" style="width:100%" onclick="currentSlide(1)" alt="AI">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/FPS.jpg" style="width:100%" onclick="currentSlide(2)" alt="FPS Games">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/WEBSITE.webp" style="width:100%" onclick="currentSlide(3)" alt="Websites">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="contact" class="contact">
@@ -111,7 +161,7 @@
                 <div class="contact-content">
                     <div class="column left">
                         <div class="text">Get in touch with me here!</div>
-                        <div class="icons">
+                        <div class="icons" id="icons">
                             <div class="icon github">
                                 <a href="https://github.com/malle2002">
                                     <div class="tooltip">Github</div>
@@ -153,7 +203,7 @@
                                 <input type="text" placeholder="Subject">
                             </div>
                             <div class="field textarea">
-                                <textarea cols="30" rows="10" placeholder="Describe project.."></textarea>
+                                <textarea cols="30" rows="10" placeholder="Describe.."></textarea>
                             </div>
                             <div class="button">
                                 <button type="sumbit">Send message</button>
@@ -163,7 +213,10 @@
                 </div>
             </div>
         </section>
-        <div class="scrollup-btn">
+        <section class="resume">
+            <div class="resume1"> <a href="https://resume.io/r/qvUFjiR84">Resume</a></div>
+        </section>
+        <div class="scrollup-btn" id="scrollup">
             <i class="fa fa-angle-up"></i>
         </div>
         <footer>
